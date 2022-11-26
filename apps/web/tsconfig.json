@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -19,9 +19,12 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["cypress", "node"],
+    "rootDir": "src",
+    "baseUrl": ".",
+    "types": ["cypress"]
   },
-  "include": [
-    "src"
-  ]
+  "references": [
+    { "path": "../../packages/p2p-router" }
+  ],
+  "include": []
 }

@@ -1,0 +1,7 @@
+Creating an optimized production build...
+Failed to compile.
+
+[eslint] Failed to load config "react-app" to extend from.
+Referenced from: /Users/cenkce/Desktop/teachers/apps/web/package.json
+
+

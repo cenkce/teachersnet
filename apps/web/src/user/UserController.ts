@@ -1,5 +1,4 @@
-import { Delete, Get, Post } from "../router/createControllerFactory";
-import { ControllerFactory } from "../router/PeerApplication";
+import {ControllerFactory, Delete, Get, Post} from "@cenkce/p2p-router";
 
 export const UserControllerFactory = (factory: ControllerFactory) => factory(
   Post("user", () => {}),
