@@ -1,0 +1,22 @@
+{
+  "name": "@cenkce/p2p-router",
+  "version": "0.1.0",
+  "packageManager": "yarn@3.3.0",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@types/path-to-regexp": "1.7.0",
+    "path-to-regexp": "6.2.1",
+    "peerjs": "1.4.7",
+    "rxjs": "^7.5.7",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "cypress": "^11.2.0",
+    "peer": "^0.6.1"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
