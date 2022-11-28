@@ -13,7 +13,8 @@
   },
   "workspaces": [
     "packages/*",
-    "apps/*"
+    "apps/*",
+    "games/*"
   ],
   "devDependencies": {
     "turbo": "^1.6.3",
