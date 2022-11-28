@@ -23,8 +23,7 @@
     "baseUrl": ".",
     "types": ["cypress"]
   },
-  "references": [
-    { "path": "../../packages/p2p-router" }
-  ],
-  "include": []
+  "include": [
+    "src"
+  ]
 }
