@@ -1,9 +1,11 @@
 {
-  "name": "my-app",
+  "name": "@teachersnet/web",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "yarn@3.3.0",
   "dependencies": {
-    "@cenkce/p2p-router": "workspace:*",
+    "@cenkce/p2p-router": "*",
+    "@teachersnet/user": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -47,6 +49,7 @@
     "@types/testing-library__jest-dom": "5.14.5",
     "concurrently": "^7.5.0",
     "cypress": "^11.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "peer": "^0.6.1",
     "typescript": "^4.9.3"
   }

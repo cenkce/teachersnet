@@ -1,0 +1,8 @@
+{
+  "name": "@cenkce/microapp-config",
+  "packageManager": "yarn@3.3.0",
+  "main": "./micro-app-webpack.config.js",
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0"
+  }
+}

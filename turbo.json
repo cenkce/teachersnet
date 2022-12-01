@@ -14,5 +14,6 @@
     "start": {
       "cache": false
     }
-  }
+  },
+  "globalEnv": ["AUTH0_DOMAIN"]
 }
