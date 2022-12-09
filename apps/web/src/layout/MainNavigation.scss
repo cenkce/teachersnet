@@ -1,0 +1,15 @@
+.UserBadge {
+  overflow: hidden;
+  width: 100px;
+  height: 30px;
+  background-color: aqua;
+}
+
+.MainNavigation {
+  background-color: aqua;
+  flex-grow: 1;
+  &_header {
+    background-color: aqua;
+    height: 50px;
+  }
+}

@@ -1,20 +1,16 @@
 import { useUserService } from '@teachersnet/user';
-import LoginButton from '@teachersnet/user/dist/LoginButton';
-import LogoutButton from '@teachersnet/user/dist/LogoutButton';
-import { useEffect } from 'react';
-import './App.css';
+import './App.scss';
+import { MainLayout } from './layout/MainLayout';
 
 function App() {
-  const {isAuthenticated, getAccessTokenSilently, } = useUserService();
-  useEffect(() => {
-    getAccessTokenSilently({})
-  }, [])
+  const {isAuthenticated } = useUserService();
+
   return (
     <div className="App">
-      <header className="App-header">Teachersnet</header>
-      <main>
+      <MainLayout></MainLayout>
+      {/* <main>
         {!isAuthenticated ? <LoginButton></LoginButton> : <LogoutButton></LogoutButton>}
-      </main>
+      </main> */}
     </div>
   );
 }

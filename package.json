@@ -10,7 +10,8 @@
   "scripts": {
     "start:web": "env-cmd turbo start --filter=@teachersnet/web",
     "start:fc": "turbo start",
-    "yarn:vscode": "echo 'install first ZipFS extension' && yarn dlx @yarnpkg/sdks vscode"
+    "yarn:vscode": "echo 'install first ZipFS extension' && yarn dlx @yarnpkg/sdks vscode",
+    "kill": "kill -9 $(lsof -ti:3000)"
   },
   "workspaces": [
     "packages/*",
