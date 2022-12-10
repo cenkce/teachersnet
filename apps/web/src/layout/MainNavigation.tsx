@@ -1,19 +1,23 @@
+import { useUserService } from "@teachersnet/user";
+import LoginButton from "@teachersnet/user/dist/LoginButton";
+import { UserBadge } from "../user/UserBadge";
 import "./MainNavigation.scss";
+  // {!isAuthenticated ? <LoginButton></LoginButton> : <LogoutButton></LogoutButton>}
 
 export const MainNavigation = () => {
+  const { isAuthenticated } = useUserService();
+
   return (
     <>
       <header className="MainNavigation_header"></header>
       <nav>
         <Navigaton></Navigaton>
-        <UserBadge name=""></UserBadge>
+        <div className="MainNavigation_user">
+          {isAuthenticated ? <UserBadge></UserBadge> : <LoginButton></LoginButton>}
+        </div>
       </nav>
     </>
   );
-};
-
-export const UserBadge = (props: { name: string }) => {
-  return <div className="UserBadge">{props.name}</div>;
 };
 
 export const Navigaton = (props: {}) => {

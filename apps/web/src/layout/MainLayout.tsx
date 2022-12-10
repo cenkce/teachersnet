@@ -1,16 +1,15 @@
+import { PropsWithChildren } from "react";
 import "./MainLayout.scss";
 import { MainNavigation } from "./MainNavigation";
 
-export const MainLayout  = () => {
+export const MainLayout  = (props: PropsWithChildren) => {
     return <main>
         <header></header>
         <section>
             <MainNavigation></MainNavigation>
         </section>
         <section>
-            <header></header>
-            <section></section>
-            <footer></footer>
+            {props.children}
         </section>
         <footer></footer>
     </main>

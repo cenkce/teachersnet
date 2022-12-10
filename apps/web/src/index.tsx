@@ -4,19 +4,24 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { UserProvider } from "@teachersnet/user";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <UserProvider
-      domain={process.env.REACT_APP_AUTH0_DOMAIN || ""}
-      clientId={process.env.REACT_APP_AUTH0_CLIENTID || ""}
-      redirectUri={process.env.REACT_APP_AUTH0_REDIRECT_URL || window.location.origin}
-    >
-      <App />
-    </UserProvider>
+    <BrowserRouter>
+      <UserProvider
+        domain={process.env.REACT_APP_AUTH0_DOMAIN || ""}
+        clientId={process.env.REACT_APP_AUTH0_CLIENTID || ""}
+        redirectUri={
+          process.env.REACT_APP_AUTH0_REDIRECT_URL || window.location.origin
+        }
+      >
+        <App />
+      </UserProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
