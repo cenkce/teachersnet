@@ -1,5 +1,4 @@
-import { ReactElement } from "react";
-import { Route, RouteProps, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 import { ProfilePage } from "./ProfilePage";
 
 
