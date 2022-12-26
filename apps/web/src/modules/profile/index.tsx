@@ -5,7 +5,7 @@ import { ProfilePage } from "./ProfilePage";
 export const ProfileModule = () => {
   return (
     <Routes>
-      <Route index element={<ProfilePage></ProfilePage>} />
+      {/* <Route index element={<ProfilePage></ProfilePage>} /> */}
       <Route path={"me"} element={<ProfilePage></ProfilePage>} />
     </Routes>
   );
