@@ -6,7 +6,6 @@ import { ProfileModule } from "./modules/profile";
 import { RequireAuth } from "./user/RequireAuth";
 
 function App() {
-  const { isAuthenticated } = useUserService();
   return (
     <div className="App">
       <MainLayout>
