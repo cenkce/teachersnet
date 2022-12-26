@@ -1,4 +1,3 @@
-import { useUserService } from "@teachersnet/user";
 import { Navigate, Route, Routes, Outlet } from "react-router-dom";
 import "./App.scss";
 import { MainLayout } from "./layout/MainLayout";
