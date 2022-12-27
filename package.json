@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "git@github.com:cenkce/teachersnet.git",
   "author": "Cenk Cetinkaya <mail@cenkcetinkaya.com>",
-  "license": "MIT",
+  "license": "GNU GPLv3",
   "private": true,
   "packageManager": "yarn@3.3.0",
   "scripts": {
